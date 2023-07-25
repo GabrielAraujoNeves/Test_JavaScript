@@ -110,7 +110,7 @@ describe("Testes das funções", () => {
 
   it("deve retornar as opções do menu", () => {
     const expected = [10, 122, 15];
-    const result = menu(2);
+    const result = menu(2, [10, 122, 15]);
     assert.deepStrictEqual(result, expected);
   });
 
