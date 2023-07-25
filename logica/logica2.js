@@ -11,8 +11,8 @@ const maiorNumero = (numeros) => {
   return Math.max(...numeros);
 };
 
-const menu = (arr) => {
-  switch (arr) {
+const menu = (op, arr) => {
+  switch (op) {
     case 1:
       return letra(arr);
     case 2:
@@ -24,5 +24,7 @@ const menu = (arr) => {
       return "nenhuma função encontrada";
   }
 };
+
+//menu(2, [10, 122, 15]);
 
 module.exports = { letra, numero, maiorNumero, menu };
